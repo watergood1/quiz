@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{%block content%}
+
+{%for i in book_items %}
+{{i."harry_potter"}}
+{{"i.The Hobbit"}}
+{{i."Atomic Habits"}}
+{{i."1984"}}
+
+{%if i > 300%}
+    "გრძელი წიგნია"
+{%else%}
+    "მოკლე წიგნია"
+{%endfor%}
+
+
+{%endblock%}
